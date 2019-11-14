@@ -1,22 +1,22 @@
 const posts = [
   {
     id: "a",
-    title: "Post a".
+    title: "Post a",
     ownerId: ""
   },
   {
     id: "b",
-    title: "Post b".
+    title: "Post b",
     ownerId: ""
   },
   {
     id: "c",
-    title: "Post c".
+    title: "Post c",
     ownerId: ""
   },
   {
     id: "d",
-    title: "Post d".
+    title: "Post d",
     ownerId: ""
   }
 ];
