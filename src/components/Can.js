@@ -1,6 +1,6 @@
 import rules from '../rbac-rules';
 
-// Imperatively checks whether the user has the permission or not 
+// Imperatively checks whether the user has the permission or not
 const check = (rules, role, action, data) => {
   const permissions = rules[role];
   if (!permissions) {
@@ -33,7 +33,7 @@ check(rules, props.role, props.perform, props.data)
   ? props.yes()
   : props.no();
 
-  can.defaultProps = {
+  Can.defaultProps = {
     yes: () => null,
     no: () => null
   };

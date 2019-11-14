@@ -5,7 +5,7 @@ import { AuthConsumer } from '../authContext';
 const Profile = () => {
   return (
     <AuthConsumer>
-      {({ user }) => {
+      {({ user }) => (
         <div>
           <h2>User Profile</h2>
           <ul>
@@ -14,7 +14,7 @@ const Profile = () => {
             <li>Role: {user.role}</li>
           </ul>
         </div>
-      }}
+      )}
     </AuthConsumer>
   );
 }

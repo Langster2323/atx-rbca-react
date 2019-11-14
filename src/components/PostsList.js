@@ -7,7 +7,7 @@ import Can from './Can';
 const PostsList = () => {
   return (
     <AuthConsumer>
-      {({ user }) => {
+      {({ user }) => (
         <div>
           <h2>Posts List</h2>
           <table className="table">
@@ -50,7 +50,7 @@ const PostsList = () => {
             </tbody>
           </table>
         </div>
-      }}
+      )}
     </AuthConsumer>
   );
 }

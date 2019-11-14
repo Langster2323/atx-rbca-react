@@ -16,6 +16,7 @@ const App = () => {
             <Switch>
               <Route exact path="/" component={HomePage} />
               <Route path="/dashboard" component={DashboardPage} />
+              <Route path="/callback" component={CallbackPage} />
             </Switch>
           </Router>
         </div>
