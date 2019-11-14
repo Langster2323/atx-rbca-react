@@ -1,8 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { BrowserRouter as Router, Route, Switch }
+
+import HomePage from './pages/home';
+import DashboardPage from './pages/dashboard';
+
+const App = () => {
+  return (
+    <div className="base-container">
+      <div className="container">
+        <Router>
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/dashboard" component={DashboardPage} />
+          </Switch>
+        </Router>
+      </div>
+    </div>
+  )
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
