@@ -8,3 +8,6 @@ const authContext = createContext({
   handleAuthentication: () => {}, // Handle Auth0 login process
   logout: () => {} // Logout the user
 });
+
+export const AuthProvider = authContext.Provider;
+export const AuthConsumer = authContext.Consumer;
