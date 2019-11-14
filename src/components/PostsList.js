@@ -39,6 +39,10 @@ const PostsList = () => {
                       <Can
                         role={user.role}
                         perform="posts:delete"
+                        data={{
+                          userId: user.id,
+                          postOwnerId: post.ownerId
+                        }}
                         yes={() => (
                           <button className="btn btn-sm btn-default">
                             Delete Post

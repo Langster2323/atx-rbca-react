@@ -2,7 +2,7 @@ const posts = [
   {
     id: "a",
     title: "Post a",
-    ownerId: ""
+    ownerId: "auth0|5dcd8fe152589f0d22a08641"
   },
   {
     id: "b",
