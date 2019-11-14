@@ -4,18 +4,22 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import HomePage from './pages/home';
 import DashboardPage from './pages/dashboard';
+import CallbackPage from './pages/callback';
+import Auth from './components/Auth';
 
 const App = () => {
   return (
     <div className="base-container">
-      <div className="container">
-        <Router>
-          <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route path="/dashboard" component={DashboardPage} />
-          </Switch>
-        </Router>
-      </div>
+      <Auth>
+        <div className="container">
+          <Router>
+            <Switch>
+              <Route exact path="/" component={HomePage} />
+              <Route path="/dashboard" component={DashboardPage} />
+            </Switch>
+          </Router>
+        </div>
+      </Auth>
     </div>
   )
 }
